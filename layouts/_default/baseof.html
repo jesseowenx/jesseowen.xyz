@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    {{ $title := .Site.Title }}
+    {{ if not .IsHome }}
+      {{ $title = printf "%s | %s" .Title .Site.Title }}
+    {{ end }}
+    <title>{{ $title }}</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/projects">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+      <a href="https://twitter.com/jesseowenx"><img src="/images/twitter.svg" alt="Twitter" width="20" height="20"></a>
+      <a href="https://github.com/jesseowenx"><img src="/images/github.svg" alt="GitHub" width="20" height="20"></a>
+      <img src="/images/bitcoin.svg" alt="Bitcoin" width="20" height="20">
+      <a href="https://www.youtube.com/@jesseowenx"><img src="/images/youtube.svg" alt="YouTube" width="20" height="20"></a>
+      <a href="https://www.twitch.tv/jesseowenx"><img src="/images/twitch.svg" alt="Twitch" width="20" height="20"></a>
+      <span> | <a href="https://www.jesseowen.xyz">jesseowen.xyz</a></span>
+    </footer>
+  </body>
+</html>
