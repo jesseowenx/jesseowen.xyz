@@ -1,7 +1,6 @@
 ---
 title: "Home"
-date: 2025-02-12T10:28:40+11:00
-draft: false
+date: 2025-02-12
 ---
 
 ## About
