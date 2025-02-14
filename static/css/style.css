@@ -29,17 +29,17 @@ footer {
 	display: flex;
   }
   
-  .navbar-item {
+.navbar-item {
 	margin-right: 20px;
   }
   
-  .navbar-link {
+.navbar-link {
 	text-decoration: underline;
 	color: #ccc;
 	font-weight: bold;
   }
   
-  .navbar-link:hover {
+.navbar-link:hover {
 	color: #007BFF;
   }
   
