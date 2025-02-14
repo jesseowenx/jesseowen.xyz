@@ -21,3 +21,25 @@ footer {
 	text-align: center ;
 	clear: both ;
 }
+
+.navbar {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+  }
+  
+  .navbar-item {
+	margin-right: 20px;
+  }
+  
+  .navbar-link {
+	text-decoration: underline;
+	color: #ccc;
+	font-weight: bold;
+  }
+  
+  .navbar-link:hover {
+	color: #007BFF;
+  }
+  

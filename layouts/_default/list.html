@@ -1,13 +1,25 @@
 {{ define "title" -}}
 {{ .Title | title }}
 {{- end }}
+
 {{ define "main" -}}
-<ul>
-{{- range .Pages }}
-<li>
-	<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-</li>
-{{- end }}
-</ul>
-{{ .Content }}
+  {{ if eq .Title "Home" }}
+    <ul class="navbar">
+      {{- range .Pages }}
+        <li class="navbar-item">
+          <a href="{{ .RelPermalink }}" class="navbar-link">{{ .Title }}</a>
+        </li>
+      {{- end }}
+    </ul>
+	{{ .Content }}
+  {{ else }}
+  	{{ .Content }}
+    <ul>
+      {{- range .Pages }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{- end }}
+    </ul>
+  {{ end }}
 {{- end }}

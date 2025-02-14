@@ -1,7 +1,5 @@
 ---
 title: "Projects"
-date: 2025-02-12
 ---
-## Projects
 
-Coming soon...
+I will try and fill this out soon but for now check out my [GitHub Profile](https://github.com/jesseowenx)
