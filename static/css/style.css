@@ -1,7 +1,7 @@
 body {
 	font-family: sans-serif ;
-	background: #110000 ;
-	color: #ccc ;
+	background: #1b1b1b ;
+	color: #fff ;
 }
 
 main {
@@ -22,6 +22,10 @@ footer {
 	clear: both ;
 }
 
+a {
+	color: #33bbff;
+}
+
 .navbar {
 	list-style-type: none;
 	padding: 0;
@@ -34,12 +38,11 @@ footer {
   }
   
 .navbar-link {
-	text-decoration: underline;
-	color: #ccc;
+	text-decoration: none;
+	color: #33bbff;
 	font-weight: bold;
   }
   
 .navbar-link:hover {
 	color: #007BFF;
   }
-  
